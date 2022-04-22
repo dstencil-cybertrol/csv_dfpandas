@@ -6,11 +6,11 @@ import pandas as pd
 col_width = 100 
 col_input= input('Set Column width (0-1000 or none): ')
 
-#
+#set column width exception handling
 if col_input in range(1000):
         col_width = int(col_input)
         
-elif col_input == ['None','none', '']:
+elif col_input == 'none']:
 	col_width = None
 else:
 	Exception('You entered the wrong value!!!!(0-1000 or None')
